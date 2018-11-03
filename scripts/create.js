@@ -96,7 +96,7 @@ async function main(title) {
 if (process.argv[2]) {
     const name = process.argv[2];
     const matched = name.match(
-        /^(?:https?:\/\/)?leetcode(?:-cn)?\.com\/problems\/([\w-]+)\/$/
+        /^(?:https?:\/\/)?leetcode(?:-cn)?\.com\/problems\/([\w-]+)\/?$/
     );
     main(matched ? matched[1] : name);
 }
