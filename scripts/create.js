@@ -58,6 +58,10 @@ function createTurndownService() {
     return turndown;
 }
 
+function normalizeSpaces(s) {
+    return s.replace(/\u00a0/g, ' ');
+}
+
 function render(template, data) {
     const turndown = createTurndownService();
     const { question } = data;
@@ -68,8 +72,10 @@ function render(template, data) {
 
     return ejs.render(template, {
         ...question,
-        content: turndown.turndown(question.content),
-        translatedContent: turndown.turndown(question.translatedContent),
+        content: normalizeSpaces(turndown.turndown(question.content)),
+        translatedContent: normalizeSpaces(
+            turndown.turndown(question.translatedContent)
+        ),
         defaultCode: javascript.defaultCode
     });
 }
