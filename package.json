@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "description": "Leetcode javascript solution.",
-  "main": "index.js",
   "scripts": {
     "create": "node scripts/create.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/HakurouKen/leetcode-javascript.git"
   },
-  "keywords": [],
+  "keywords": [
+    "leetcode",
+    "leetcode-javascript",
+    "leetcode-solution"
+  ],
   "author": "HakurouKen",
   "license": "MIT",
   "bugs": {
