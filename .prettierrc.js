@@ -1,3 +1,4 @@
 module.exports = {
-  parser: 'babel'
+  parser: 'babel',
+  singleQuote: true
 };
