@@ -5,7 +5,8 @@
   "description": "Leetcode solutions by HakurouKen.",
   "scripts": {
     "create": "node scripts/create.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext .md solutions --fix",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -29,11 +30,24 @@
     "eslint-plugin-markdown": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "graphql-request": "^1.8.2",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
     "node-fetch": "^2.2.0",
     "prettier": "^1.18.1",
     "tough-cookie": "^2.4.3",
     "turndown": "^5.0.1",
     "turndown-plugin-gfm": "^1.0.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.md": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
 }
