@@ -1,8 +1,8 @@
 {
-  "name": "leetcode-javascript",
+  "name": "leetcode",
   "version": "1.0.0",
   "private": true,
-  "description": "Leetcode javascript solution.",
+  "description": "Leetcode solutions by HakurouKen.",
   "scripts": {
     "create": "node scripts/create.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,9 +23,14 @@
   },
   "homepage": "https://github.com/HakurouKen/leetcode-javascript#readme",
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "ejs": "^2.6.1",
+    "eslint": "^6.3.0",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "graphql-request": "^1.8.2",
     "node-fetch": "^2.2.0",
+    "prettier": "^1.18.1",
     "tough-cookie": "^2.4.3",
     "turndown": "^5.0.1",
     "turndown-plugin-gfm": "^1.0.2"
