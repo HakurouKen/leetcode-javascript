@@ -25,7 +25,7 @@
   "homepage": "https://github.com/HakurouKen/leetcode-javascript#readme",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
-    "ejs": "^2.6.1",
+    "ejs": "^3.1.7",
     "eslint": "^6.3.0",
     "eslint-plugin-markdown": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.0",
